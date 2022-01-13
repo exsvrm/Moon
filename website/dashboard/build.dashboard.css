@@ -30,7 +30,7 @@ body #container
 body #container .list
 .grid {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 body #container .list
