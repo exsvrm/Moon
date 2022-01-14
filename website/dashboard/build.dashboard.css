@@ -25,6 +25,9 @@ body #container
 body #container
 .list {
     margin-top: 5vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 body #container .list
@@ -34,14 +37,12 @@ body #container .list
 }
 
 body #container .list
-.icon {
-    position: absolute;
-    margin-left: 80vh;
-    border-radius: 50%;
+.grid span {
+    padding: 10px 25px;
 }
 
 body #container .list
-.icon img {
+.icon {
     border-radius: 50%;
 }
 
@@ -49,8 +50,6 @@ body #container .list
 .name {
     color: white;
     font-size: 1.75vh;
-    position: absolute;
-    margin-left: 86.5vh;
 }
 
 body #container .list .grid
@@ -62,6 +61,22 @@ body #container .list .grid
     background: #4f545c;
     border: 2px solid #4f545c;
     border-radius: 5px;
-    position: absolute;
-    margin-left: 110vh;
+}
+
+@media screen and (max-width: 800px) {
+    body #container .list
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body #container .list
+    .grid span {
+        font-size: 2.5vh;
+    }
+
+    body #container .list
+    .grid span > img {
+        height: 86px;
+    }
 }
