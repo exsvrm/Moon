@@ -1,54 +1,50 @@
 * {
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -khtml-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
-    text-decoration:none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration: none;
 }
 
 body,
 html {
+    height: 100%;
     background: rgb(22, 22, 22);
     margin: 0;
     padding: 0;
-    font-family: Apato, "Helvetica Neue", Arial, sans-serif;
+    font-family: Arimo;
+    font-size: 18px;
 }
 
-body #container
-.brand {
+body #container .brand {
     color: white;
     text-align: center;
 }
 
-body #container
-.list {
+body #container .list {
     margin-top: 5vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
-body #container .list
-.grid {
+body #container .list .grid {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-body #container .list
-.grid span {
+body #container .list .grid span {
     padding: 10px 15px;
 }
 
-body #container .list
-.icon {
+body #container .list .icon {
     border-radius: 50%;
 }
 
-body #container .list
-.name {
+body #container .list .name {
     color: white;
     font-size: 1.75vh;
     width: 250px;
@@ -60,8 +56,7 @@ body #container .list
     Word-wrap: break-Word;
 }
 
-body #container .list .grid
-.button {
+body #container .list .grid .button {
     cursor: pointer;
     color: white;
     padding: 3px 22px;
@@ -72,19 +67,15 @@ body #container .list .grid
 }
 
 @media screen and (max-width: 800px) {
-    body #container .list
-    .grid {
+    body #container .list .grid {
         display: flex;
         flex-direction: column;
     }
-
-    body #container .list
-    .grid span {
+    body #container .list .grid span {
         font-size: 2.5vh;
+        text-align: center;
     }
-
-    body #container .list
-    .grid span > img {
+    body #container .list .grid span>img {
         height: 86px;
     }
 }
