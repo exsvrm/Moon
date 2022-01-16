@@ -71,6 +71,7 @@ body #container .list .grid .button {
     body #container .list .grid {
         display: flex;
         flex-direction: column;
+        margin-block: 50px;
     }
     body #container .list .grid span {
         font-size: 2.5vh;
